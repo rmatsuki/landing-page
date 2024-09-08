@@ -1,3 +1,4 @@
+/* Custom fonts */
 @font-face {
     font-family: "Roboto-Regular";
     src: url("./fonts/Roboto-Regular.ttf");
@@ -18,6 +19,7 @@
     src: url("./fonts/Roboto-LightItalic.ttf");
 }
 
+/* Set body font-family and reset margin and padding */
 body
 {
     font-family: "Roboto-Regular";
@@ -25,26 +27,27 @@ body
     padding: 0;
 }
 
-h1, h2, h3
+/* Set padding and margin to 0 */
+h1, h2, h3, h4, p
 {
     padding: 0;
     margin: 0;
 }
 
-/* Padding for all containers */
+/* Set default padding for all containers */
 .container-padding
 {
     padding: 20px 200px 100px 200px;
 }
 
-/* All containers */
+/* All containers; top-to-bottom */
 .container-all
 {
     display: flex;
     flex-direction: column;
 }
 
-/* Parent Containers #1 & #2 */
+/* Header and Hero containers */
 .header,
 .hero
 {
@@ -52,7 +55,7 @@ h1, h2, h3
     color: #F9FAF8;
 }
 
-/* Parent Container #1 */
+/* Header container */
 .header
 {
     color: #F9FAF8;
@@ -65,7 +68,7 @@ h1, h2, h3
     justify-content: space-between;
 }
 
-/* Header Links */
+/* Header links */
 .header li
 {
     font-family: "Roboto-Thin";
@@ -73,61 +76,7 @@ h1, h2, h3
     gap: 25px;
 }
 
-/* All images */
-img
-{
-    margin: 0;
-    padding: 0;
-}
-
-/* Parent Container #2 */
-.hero-container
-{
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.hero
-{
-    padding-right: 7%;
-    margin: 0;
-}
-
-.hero-text
-{
-    font-family: "Roboto-Bold";
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
-}
-
-.hero-desc
-{
-    font-family: "Roboto-Thin";
-    font-size: 18px;
-    color: #E5E7EB;
-    margin-top: auto;
-    margin-bottom: 10px;
-    padding-right: 0px;
-}
-
-.hero-container button
-{
-    background-color: #3882F6;
-    font-size: larger;
-    color: white;
-    border-radius: 12px;
-    border-style: none;
-    padding: 10px 40px 10px 40px;
-}
-
-.hero-img
-{
-    background-color: #1F2937;
-    padding-left: 0px;
-}
-
+/* Header links styling */
 a,
 li
 {
@@ -140,11 +89,67 @@ li
     gap: 20px;
 }
 
+/* Reset all image tag's margin and padding */
+img
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero parent container */
 .hero-container
 {
     display: flex;
+    flex-direction: row;
+    
 }
 
+/* Hero child container */
+.hero
+{
+    padding-right: 7%;
+    margin: 0;
+}
+
+/* Hero header */
+.hero-text
+{
+    font-family: "Roboto-Bold";
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+/* Hero secondary text */
+.hero-desc
+{
+    font-family: "Roboto-Thin";
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-right: 0px;
+}
+
+/* Hero sign-up button */
+.hero-container button
+{
+    background-color: #3882F6;
+    font-size: larger;
+    color: white;
+    border-radius: 12px;
+    border-style: none;
+    padding: 10px 40px 10px 40px;
+}
+
+/* Hero image */
+.hero-img
+{
+    background-color: #1F2937;
+    padding-left: 0px;
+}
+
+/* Content header */
 .content-header
 {
     font-family: "Roboto-Bold";
@@ -157,6 +162,7 @@ li
     justify-content: center;
 }
 
+/* Content container to center as column and create gaps */
 .content
 {
     display: flex;
@@ -165,11 +171,13 @@ li
     gap: 50px;
 }
 
+/* Round out image container corners */
 .content img
 {
     border-radius: 5%;
 }
 
+/* Align the content images */
 .img-container
 {
     padding: 0;
@@ -179,6 +187,7 @@ li
     align-items: center;
 }
 
+/* Subtext container */
 .subtext
 {
     font-family: "Roboto-Thin";
@@ -186,10 +195,11 @@ li
     padding: 0;
     margin: 0;
     margin-top: 9px;
-    text-align: center;
     width: 210px;
+    text-align: center;
 }
 
+/* Quote container */
 .quote
 {
     font-family: "Roboto-LightItalic";
@@ -202,6 +212,7 @@ li
     align-items: flex-end;
 }
 
+/* Author container */
 .author
 {
     font-family: "Roboto-Bold";
@@ -209,8 +220,76 @@ li
     padding-right: 30px;
 }
 
+/* Call-to-action container (outer) */
+.cta-container
+{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Call-to-action container (inner) */
+.cta
+{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 12px;
+    width: 75%;
+    padding: 60px 100px 60px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+ /* Call-to-action container to style as column */
+.cta-col
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Call-to-action header */
+.cta-header
+{
+    font-family: "Roboto-Bold";
+    font-size: 25px;
+    padding-left: 2px;
+}
+
+/* Call-to-action secondary text */
+.cta-desc
+{
+    font-family: "Roboto-Thin";
+    font-size: 20px;
+}
+
+/* Call-to-action sign-up button */
+.signup button
+{
+    background-color: #3882F6;
+    font-size: larger;
+    color: #F9FAF8;
+    border-radius: 12px;
+    border-style: none;
+    border: 2px solid #F9FAF8;
+    padding: 10px 40px 10px 40px;
+    margin-right: 70px;
+
+}
+
+/* The Odin Project footer */
 .footer
 {
+    font-family: "Roboto-Thin";
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 
 }
 
